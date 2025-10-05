@@ -13,9 +13,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '24111429'))
-API_HASH = environ.get('API_HASH', '41c451e7412d4225f0a5450a166bcf7a')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '25471015'))
+API_HASH = environ.get('API_HASH', '0ab2955ad5b1a913e220800b5fc5db36')
+BOT_TOKEN = environ.get('BOT_TOKEN', "8465196684:AAFi3gsjXp_ugxoqZiKwIN9QDgY1nyZsyIg")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -34,24 +34,24 @@ STREAM_API = (environ.get('STREAM_API', '77960489f7791283414e359c32475f1f07e0fdd
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Hindi_movie_uplod/36'))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1807927334 7436687322').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002108939580').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5492204858').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002406799151').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '1807927334').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1002321973166')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002600085277')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002600085277')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002600085277')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Thunder2:khan7860@cluster0.u85aqco.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://kari41875:ULpuG17sXjXV0Yna@cluster0.olegt6m.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://cute61283_db_user:OnGplX1cR3YOA44K@cluster0.1mpg0mr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://cute61283_db_user:OnGplX1cR3YOA44K@cluster0.1mpg0mr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Abhi12")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
@@ -64,13 +64,13 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Your_Movie_Link_8')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Hindi_movie_uplod')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Hindi_movie_uplod/36')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+MPYqWUWHJcY2OTVl')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+MPYqWUWHJcY2OTVl')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+MPYqWUWHJcY2OTVl')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
-MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : Abhikumar7799')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002036849852'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Your_Movie_Link_8')
+MSG_ALRT = environ.get('MSG_ALRT', 'ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : Junglekirani')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002474664348'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '+MPYqWUWHJcY2OTVl')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
